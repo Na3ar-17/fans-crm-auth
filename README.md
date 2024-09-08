@@ -1,4 +1,3 @@
-```markdown
 ## Клонуйте проєкт з GitHub репозиторію:
 
 ```bash
@@ -45,4 +44,3 @@ yarn start
 - `POST /api/auth/register` – Реєстрація нового користувача.
 - `POST /api/auth/login` – Авторизація користувача та отримання JWT токена.
 - `GET /api/user/profile` – Отримання інформації про профіль.
-```
