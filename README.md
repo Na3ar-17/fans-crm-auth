@@ -1,48 +1,48 @@
- <h1>Клонуйте проєкт з GitHub репозиторію</h1>
-    <pre>
-        <code>git clone https://github.com/Na3ar-17/fans-crm-auth.git</code>
-    </pre>
+```markdown
+## Клонуйте проєкт з GitHub репозиторію:
 
-    <h2>Налаштування бази даних</h2>
-    <p>Перед тим, як запустити проєкт, необхідно налаштувати базу даних MySQL та конфігураційні змінні для сервера:</p>
-    <ol>
-        <li>Створіть базу даних MySQL з назвою <strong>fanscrm</strong>.</li>
-        <li>Налаштуйте змінні середовища для сервера:</li>
-    </ol>
-    <p>Перейдіть до директорії <code>server</code> і створіть файл <code>.env</code> з наступним вмістом:</p>
-    <pre>
-        <code>
-cat <<EOT >> ./server/.env
-DB_PASSWORD=YOU_DB_PASSWORD
-JWT_SECRET=JWT_SECRET_KEY
-EOT
-        </code>
-    </pre>
-    <p>Замініть <code>YOU_DB_PASSWORD</code> на ваш фактичний пароль до бази даних MySQL, а <code>JWT_SECRET_KEY</code> — на бажаний секретний ключ для JWT.</p>
+```bash
+git clone https://github.com/Na3ar-17/fans-crm-auth.git
+```
 
-    <h2>Запуск проєкту</h2>
-    <p>Щоб запустити сервер і клієнт, виконайте наступні команди:</p>
+## Налаштування бази даних
 
-    <h3>Запуск сервера:</h3>
-    <pre>
-        <code>
+Перед тим, як запустити проєкт, необхідно налаштувати базу даних MySQL та конфігураційні змінні для сервера:
+
+1. **Створіть базу даних MySQL** з назвою `fanscrm`.
+2. **Налаштуйте змінні середовища для сервера**:
+    - Перейдіть до директорії `server` і створіть файл `.env` з наступним вмістом:
+
+    ```bash
+    DB_PASSWORD=YOU_DB_PASSWORD
+    JWT_SECRET=JWT_SECRET_KEY
+    ```
+
+    - Замініть `YOU_DB_PASSWORD` на ваш фактичний пароль до бази даних MySQL, а `JWT_SECRET_KEY` — на бажаний секретний ключ для JWT.
+
+## Запуск проєкту
+
+Щоб запустити сервер і клієнт, виконайте наступні команди:
+
+### Запуск сервера:
+
+```bash
 cd ./server
 yarn start:dev
-        </code>
-    </pre>
+```
 
-    <h3>Запуск клієнта:</h3>
-    <pre>
-        <code>
+### Запуск клієнта:
+
+```bash
 cd ./client
 yarn start
-        </code>
-    </pre>
+```
 
-    <h2>API ендпоінти</h2>
-    <p>Нижче наведені доступні серверні API ендпоінти:</p>
-    <ul>
-        <li><strong>POST</strong> /api/auth/register – Реєстрація нового користувача.</li>
-        <li><strong>POST</strong> /api/auth/login – Авторизація користувача та отримання JWT токена.</li>
-        <li><strong>GET</strong> /api/user/profile – Отримання інформації про профіль авторизованого користувача.</li>
-    </ul>
+## API ендпоінти
+
+Нижче наведені доступні серверні API ендпоінти:
+
+- `POST /api/auth/register` – Реєстрація нового користувача.
+- `POST /api/auth/login` – Авторизація користувача та отримання JWT токена.
+- `GET /api/user/profile` – Отримання інформації про профіль.
+```
