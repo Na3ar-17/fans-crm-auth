@@ -1,0 +1,8 @@
+.info {
+  @apply text-xl font-semibold;
+  max-width: 800px;
+  word-break: break-word;
+  span {
+    @apply text-lg font-normal;
+  }
+}

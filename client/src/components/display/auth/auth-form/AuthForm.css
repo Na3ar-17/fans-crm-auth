@@ -1,0 +1,20 @@
+.label {
+  @apply flex flex-col;
+  span {
+    @apply mb-1 text-[#424c5b] font-semibold text-[1.05rem];
+  }
+  .input {
+    @apply px-2 border-2 border-solid border-[#253244]  py-1 transition-all focus-within:border-[#37485f] bg-slate-800 text-[17px] rounded-[4px];
+  }
+
+  .error-message {
+    @apply text-sm text-rose-500 mt-2;
+  }
+}
+
+.toggle-form {
+  @apply text-sm;
+  span {
+    @apply text-[#3a7eed] transition-colors hover:text-indigo-400 cursor-pointer;
+  }
+}
