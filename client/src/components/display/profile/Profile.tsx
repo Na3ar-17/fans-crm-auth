@@ -14,10 +14,9 @@ const Profile = () => {
         auth?.setUser(data)
         setIsLoading(false)
       })
-return () => {
-subscribed = false
-}
-    
+    return () => {
+      subscribed = false
+    }
   }, [])
 
   return (
